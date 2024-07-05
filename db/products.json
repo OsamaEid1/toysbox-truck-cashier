@@ -1,0 +1,734 @@
+[
+    {
+        "barcode": "0505",
+        "name": "شنب تنكرى",
+        "price": "10.00",
+        "stock": "84"
+    },
+    {
+        "barcode": "0210018033",
+        "name": "بابلز مقص صابون",
+        "price": "55.00",
+        "stock": "40"
+    },
+    {
+        "barcode": "0200082033",
+        "name": "Squeeze Ball New",
+        "price": "60.00",
+        "stock": "34"
+    },
+    {
+        "barcode": "0210038033",
+        "name": "ليزر ليزر ميدالية",
+        "price": "40.00",
+        "stock": "33"
+    },
+    {
+        "barcode": "0210052033",
+        "name": "سوسته ملونه",
+        "price": "30.00",
+        "stock": "24"
+    },
+    {
+        "barcode": "0210088033",
+        "name": "ك.هـ سوستة",
+        "price": "35.00",
+        "stock": "24"
+    },
+    {
+        "barcode": "0210179033",
+        "name": "أستاند Stunt Car - 901",
+        "price": "30.00",
+        "stock": "24"
+    },
+    {
+        "barcode": "0210186077",
+        "name": "أستاند Cute Little Pets",
+        "price": "49.90",
+        "stock": "24"
+    },
+    {
+        "barcode": "6975812830166",
+        "name": "علبة مغناطيس 10 قطع",
+        "price": "99.90",
+        "stock": "24"
+    },
+    {
+        "barcode": "0210005001",
+        "name": "بابلز أشكال صابون كبير",
+        "price": "35.00",
+        "stock": "23"
+    },
+    {
+        "barcode": "0210177033",
+        "name": "أستاند دبدوب يويو شراشيب",
+        "price": "75.00",
+        "stock": "22"
+    },
+    {
+        "barcode": "0210021044",
+        "name": "اسلايم علبة صغيرة",
+        "price": "39.90",
+        "stock": "20"
+    },
+    {
+        "barcode": "6911334265000",
+        "name": "بطارية كبيرة Veko AA",
+        "price": "30.00",
+        "stock": "20"
+    },
+    {
+        "barcode": "6911334265017",
+        "name": "بطارية صغيرة Veko AAA",
+        "price": "25.00",
+        "stock": "20"
+    },
+    {
+        "barcode": "0010002044",
+        "name": "Playing Cards Broadway - Red",
+        "price": "75.00",
+        "stock": "12"
+    },
+    {
+        "barcode": "0200009001",
+        "name": "كورة عنب فى شبكه ",
+        "price": "30.00",
+        "stock": "12"
+    },
+    {
+        "barcode": "0200059044",
+        "name": "سكوشى شبكه جليتر",
+        "price": "30.00",
+        "stock": "12"
+    },
+    {
+        "barcode": "6803786512347",
+        "name": "Ball LOL Surprise - 1234",
+        "price": "89.90",
+        "stock": "12"
+    },
+    {
+        "barcode": "0210185077",
+        "name": "أستاند Funny Animals - KW819",
+        "price": "40.00",
+        "stock": "11"
+    },
+    {
+        "barcode": "0070072777",
+        "name": "Glitter Slim - شخصيات",
+        "price": "75.00",
+        "stock": "9"
+    },
+    {
+        "barcode": "0070077033",
+        "name": "أستاند صلصال فلامنجو Play Dough",
+        "price": "149.90",
+        "stock": "9"
+    },
+    {
+        "barcode": "0210096099",
+        "name": "كارت 3 بابلز - 8921-8",
+        "price": "59.90",
+        "stock": "7"
+    },
+    {
+        "barcode": "0210178033",
+        "name": "كارت Spinning Top - L322",
+        "price": "55.00",
+        "stock": "6"
+    },
+    {
+        "barcode": "6223007320764",
+        "name": "بدون كلام - 8756",
+        "price": "49.90",
+        "stock": "6"
+    },
+    {
+        "barcode": "6223007322539",
+        "name": "سكرو شو بوكس",
+        "price": "175.00",
+        "stock": "6"
+    },
+    {
+        "barcode": "0180062033",
+        "name": "Power Eva Launch - YC102",
+        "price": "239.90",
+        "stock": "4"
+    },
+    {
+        "barcode": "1452883000001",
+        "name": "Uno Number 1",
+        "price": "65.00",
+        "stock": "4"
+    },
+    {
+        "barcode": "6223007321068",
+        "name": "Bedon Kalam Magentic",
+        "price": "225.00",
+        "stock": "4"
+    },
+    {
+        "barcode": "0060037555",
+        "name": "Fashion Make Up - CM 108",
+        "price": "85.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "0100017033",
+        "name": "Sports Car 4WD Powerful - 66-112",
+        "price": "125.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "0180061033",
+        "name": "جراب 2 مسدس ع كارت - 846",
+        "price": "99.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "0200076044",
+        "name": "Flynova PRO Spinner - 3941-2",
+        "price": "199.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "0200086130",
+        "name": "Cubing Classroom 3*3*3 - MF8841",
+        "price": "89.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "0210107033",
+        "name": "ضفيرة شعر فروزن بنى",
+        "price": "99.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "0210116088",
+        "name": "Animals+Gun ع كارت",
+        "price": "185.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "0210189033",
+        "name": "Super Lighting Peg-Top - 0969",
+        "price": "125.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "6222360721393",
+        "name": "Finger Tip Scopperil Spinner - W2017-25",
+        "price": "75.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "6223007320184",
+        "name": "Mini 4 In a Row",
+        "price": "35.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "6223007320610",
+        "name": "Phase 10 Travel - 5940",
+        "price": "59.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "6224002198020",
+        "name": "معاهم ولا عليهم ؟",
+        "price": "180.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "6225000441873",
+        "name": "انا مش عارفنى - ك",
+        "price": "300.00",
+        "stock": "3"
+    },
+    {
+        "barcode": "6944821114017",
+        "name": "Finger Slug",
+        "price": "69.90",
+        "stock": "3"
+    },
+    {
+        "barcode": "0010010001",
+        "name": "Prank Snake Mike - Y333-79",
+        "price": "449.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0010022088",
+        "name": "Quick Cups Game - 999-89",
+        "price": "279.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0030016044",
+        "name": "Helicopter I/R-1804R - Black",
+        "price": "249.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0050020666",
+        "name": "Modern Pretty Girl - 2630",
+        "price": "399.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0060040666",
+        "name": "Dentist - LY3010",
+        "price": "149.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0080002044",
+        "name": "Catch Ball Game",
+        "price": "139.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0110010033",
+        "name": "باروكة بلياتشو",
+        "price": "149.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0120040044",
+        "name": "Diy Block Series 120Pcs - 335-5",
+        "price": "99.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0120068555",
+        "name": "City Police 57 Pcs - 0306",
+        "price": "85.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0160047033",
+        "name": "Happy quoits Panda - 880",
+        "price": "185.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0180059033",
+        "name": "Popper Squeeze - 907",
+        "price": "125.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0210031033",
+        "name": "Magic 3D Cube",
+        "price": "90.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0210081033",
+        "name": "لعبة فيديو جيم 9999",
+        "price": "75.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0210105044",
+        "name": "بي بليد فاكيوم - GF604A",
+        "price": "139.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0210170044",
+        "name": "Intelligent Mobile Phone - 162-13",
+        "price": "149.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "0210175111",
+        "name": "عربيات مطافى 6 قطع - 322-6A",
+        "price": "125.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007320542",
+        "name": "Phase 10 Card Board Game - 11142",
+        "price": "195.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007320573",
+        "name": "Golden Playing Cards - 11135",
+        "price": "95.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007320856",
+        "name": "Mafia",
+        "price": "225.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007321112",
+        "name": "Carnaval - 21112",
+        "price": "345.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007321136",
+        "name": "The Secret Of The Ghost Card Game",
+        "price": "195.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007321396",
+        "name": "الكوز - Kooz",
+        "price": "225.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007321792",
+        "name": "عينك على المفتاح",
+        "price": "195.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6223007322010",
+        "name": "Sequence Stacks",
+        "price": "329.90",
+        "stock": "2"
+    },
+    {
+        "barcode": "6224002198112",
+        "name": "ييجى منه ؟",
+        "price": "120.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "6956664809838",
+        "name": "Electric Water Gun - 138-15",
+        "price": "675.00",
+        "stock": "2"
+    },
+    {
+        "barcode": "0010030088",
+        "name": "Fishing Game - 9269",
+        "price": "199.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0010038088",
+        "name": "Bad Dog - 338-69",
+        "price": "599.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030034088",
+        "name": "Stunt Electric Car - Green - YT401",
+        "price": "649.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030036077",
+        "name": "Racin Sports Car - 167 - Black",
+        "price": "449.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030037077",
+        "name": "Racin Sports Car - 167 - Blue",
+        "price": "449.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030040666",
+        "name": "Speed Racing - Yellow - 119",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030041666",
+        "name": "Speed Racing - Blue - 119",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0030042666",
+        "name": "Speed Racing - White - 119",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050017088",
+        "name": "Sweety Baby - LY108",
+        "price": "379.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050021088",
+        "name": "Graceful Love - Blue - YX209A",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050022088",
+        "name": "Graceful Love - Green - YX209A",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050024777",
+        "name": "Na!Na!Na Surprise - ME8812A",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050025777",
+        "name": "Na!Na!Na Surprise - ME8813A",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0050026777",
+        "name": "Na!Na!Na Surprise - ME8814A",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0060038555",
+        "name": "My Little Pony Horse - 168-991",
+        "price": "149.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0070058111",
+        "name": "Toy Multi Color Hair Style - 015",
+        "price": "255.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0070061111",
+        "name": "Manicure Nail Makeup - 907",
+        "price": "435.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0070069044",
+        "name": "ع خرز مربع ",
+        "price": "295.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0070070777",
+        "name": "Dining Car Girl - صلصال",
+        "price": "525.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0070076033",
+        "name": "علبة خرز 27 خانة + مقص + 2 بكرة - ART2001",
+        "price": "399.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0080050120",
+        "name": "Racket Trainer - 501A",
+        "price": "399.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0080053077",
+        "name": "طيارة فوم بالنور",
+        "price": "135.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0100015666",
+        "name": "Sports Racing Car - 20Pcs",
+        "price": "359.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0120071044",
+        "name": "Blocks Panlos Brick 339 Pcs - 666015",
+        "price": "449.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0120072044",
+        "name": "Blocks Panlos Brick 256 Pcs - 666006",
+        "price": "449.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0130010777",
+        "name": "Gyro Transmitter Athletic - A138-12",
+        "price": "349.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0130011777",
+        "name": "Beyblade Powerful - BY537",
+        "price": "425.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0130013033",
+        "name": "Avengers 4 End Game - 8 Pcs",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0160038120",
+        "name": "My Baby Rattles 6*1 - K225D-330",
+        "price": "135.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0160042555",
+        "name": "طبلة بيبي + 2 شخليلة - 2839",
+        "price": "115.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0160044111",
+        "name": "شخليلة 2 ملعقة سيليكون - TG8373A-5",
+        "price": "99.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0160048033",
+        "name": "Whack-A-Mole Fun - 6688-7",
+        "price": "199.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0180006044",
+        "name": "Conqueror 3/1 Gun - 126",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0180049111",
+        "name": "Fun Shooting 2in1 Aircraft Carrier - HT-030",
+        "price": "499.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0180054044",
+        "name": "Toy Super Ball Gun - A67-084",
+        "price": "235.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0180055044",
+        "name": "Toy Super Ball 3 Gun - A67-085",
+        "price": "275.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0180058777",
+        "name": "Hero Gun Target Equipment - M322",
+        "price": "599.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0210134088",
+        "name": "كارت2مسدس طلق سوفت+كور - YD667A",
+        "price": "125.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "0210135088",
+        "name": "كارت بندقية أخضر - 9466",
+        "price": "109.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "0210138088",
+        "name": "كارت Colored Mud - 2021-5",
+        "price": "145.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6223007320016",
+        "name": "Jackaroo A Wooden Board With Card Game - 2212",
+        "price": "595.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6223007320191",
+        "name": "Arabic Edition Crazy Talk Card Game - 8266",
+        "price": "425.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6223007320269",
+        "name": "Sequence Deluxe Board Game - 3328",
+        "price": "625.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6223007321099",
+        "name": "Mouthpieces Crazy Talk - 1099",
+        "price": "99.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6223007321785",
+        "name": "أكشف الكذاب",
+        "price": "149.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6224002198013",
+        "name": "ولاعة",
+        "price": "180.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6464655507910",
+        "name": "Elastic Shoot Gun - HY6007",
+        "price": "199.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6920211230024",
+        "name": "Soft Bullet Gun - FJ801",
+        "price": "289.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6920211230031",
+        "name": "Soft Bullet Gun - FJ802",
+        "price": "349.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6923820230324",
+        "name": "Avengers - 12 Pcs - AB555",
+        "price": "249.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6937645538145",
+        "name": "Cogo 2in1 Car/Studio 212Pcs - 3814",
+        "price": "449.90",
+        "stock": "1"
+    },
+    {
+        "barcode": "6970124302073",
+        "name": "مسدس جل بابجى ذهبى - ZM-H3",
+        "price": "225.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6972846146607",
+        "name": "Vegetable and Fruit Shop - كارت - 6042",
+        "price": "145.00",
+        "stock": "1"
+    },
+    {
+        "barcode": "6973140950266",
+        "name": "كارت صياد سمك - 755-183",
+        "price": "185.00",
+        "stock": "1"
+    }
+]
