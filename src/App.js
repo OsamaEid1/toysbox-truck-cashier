@@ -10,9 +10,10 @@ import RootLayout from './layout/RootLayout';
 // Pages
 import Buy from './pages/Buy';
 import SalesLayout from './layout/SalesLayout';
-import DetailedSales from './pages/DetailedSales';
+import SalesHistory from './pages/SalesHistory';
 import SalesSummary from './pages/SalesSummary';
 import DiscountedSales from './pages/DiscountedSales';
+import SalesReports from './pages/SalesReports';
 // // CSS
 // import "./css/output.css"
 
@@ -23,9 +24,10 @@ const router = createBrowserRouter(
         <Route index element={<Buy />} />
         <Route path='sales' element={<SalesLayout />}>
           <Route index element={<SalesSummary />} />
-          <Route path='summary' element={<DetailedSales />} />
+          <Route path='sales-history' element={<SalesHistory />} />
           <Route path='discounted-sales' element={<DiscountedSales />} />
         </Route>
+        <Route path='sales-reports' element={<SalesReports />} />
   </Route>
   )
 )

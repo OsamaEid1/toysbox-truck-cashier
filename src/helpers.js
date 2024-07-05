@@ -90,57 +90,186 @@ export const countRepeatedSales = (soldProducts) => {
     const summedProducts = Array.from(qtyMap.values());
     return summedProducts;
 }
-export const calculateTotalMoneyForSummary = (sales) => {
-    let total = 0;
-    sales.forEach(sale => {
-        total += sale.totalPrice;
-        console.log(sale);
-    });
-    return total;
-};
-export const calculateTotalMoneyForDetailedSales = (sales) => {
-    let total = 0;
-    sales.forEach(sale => {
-        total += sale.qty * Math.ceil(sale.price);
-    });
-    return total;
-};
-export const calculateTotalMoneyForDiscountedSales = (sales) => {
-    let total = 0;
-    sales.forEach(sale => {
-        total += sale.qty * Math.ceil(sale.price);
-    });
-    return total;
-};
-// export const postAllProductsWithUpdates = async (products) => {
-//     try {
-//         const response = await fetch("http://localhost:4000/sales", {
-//             method: 'POST',
-//             // mode: 'no-cors',
-//             headers: {'Content-Type': 'application/json'},
-//             body: JSON.stringify(products),
-//         });
-//         if (!response.ok) {
-//             throw new Error(`Failed to Update Product Stock, And Status Is: ${response.statusText}`);
-//         }
-        
-//         return true;
-//     } catch (error) {
-//         console.error(error);
-//         return null;
-//     }
-// };
 
-// export const updateProductStockInDB = async (barcode, newStock) => {
-//     // Get All Products
-//     const products = await getProducts();
-//     // Update Product Stock
-//     products.forEach((product) => {
-//         if (product.barcode === barcode) {
-//             product.stock = newStock;
-//         }
-//     });
-//     console.log(products);
-//     // Set Updated Products Data And Return Operation State
-//     return postAllProductsWithUpdates(products);
-// };
+export const getSalesSummary = (salesData) => {
+    return countRepeatedSales(salesData);
+};
+export const getDiscountedSales = (salesData) => {
+    const sales = salesData.filter((product) => product.discount === "نعم");
+    return sales;
+};
+
+export const calculateTotalMoneyForSummary = (sales) => {
+    const totalMoney = sales.reduce((total, sale) => {
+        return total += sale.totalPrice;
+    }, 0);
+    return totalMoney;
+};
+export const calculateTotalMoneyForSalesHistory = (sales) => {
+    const totalMoney = sales.reduce((total, sale) => {
+        return total += sale.qty * sale.price;
+    }, 0);
+    return totalMoney;
+};
+export const calculateTotalMoneyForDiscountedSalesBeforeDiscount = (sales) => {
+    const totalMoney = sales.reduce((total, sale) => {
+        return total += sale.qty * sale.priceBeforeDiscount;
+    }, 0);
+    return totalMoney;
+};
+
+export const getTotalSoldPiecesForSummarySales = (sales) => {
+    return sales.reduce((total, sale) => {
+        return total += +sale.totalSoldQty;
+    }, 0)
+}
+export const getTotalSoldPiecesForSalesHistory = (sales) => {
+    return sales.reduce((total, sale) => {
+        return total += +sale.qty;
+    }, 0)
+}
+export const getTotalSoldPiecesForDiscountedSales = (sales) => {
+    return sales.reduce((total, sale) => {
+        return total += +sale.qty;
+    }, 0)
+}
+
+export const createReportTextForSalesSummary = (salesInfo) => {
+    const sales = salesInfo.sales;
+
+    let text = `**تقرير بملخص المبيعات** \n`;
+    sales.map((sale) => {
+        text += `
+        اسم المنتج: ${sale.name}
+        الكود: ${sale.barcode}
+        الكمية المُباعة: ${sale.totalSoldQty}
+        عدد مرات البيع: ${sale.numOfRepeatSales}
+        إجمالي المبلغ: $${sale.totalPrice}
+        
+        ------
+        `;
+    });
+
+    text += `---------------------------------`;
+    text += `\n\n إجمالي عدد الأصناف المُباعة: ${salesInfo.totalSoldItems}`;
+    text += `\n إجمالي عدد القطع المُباعة: ${salesInfo.totalSoldPieces}`;
+    text += `\n إجمالي مبلغ المبيعات: $${salesInfo.totalMoney.toLocaleString()}`;
+    text += `\n هذا التقرير تم إصداره في ${new Date().toLocaleString()}`;
+    
+    return text;
+};
+export const createReportTextForSalesHistory = (salesInfo) => {
+    const sales = salesInfo.sales;
+
+    let text = `**تقرير بسجل عمليات البيع** \n`;
+    sales.map((sale) => {
+        text += `
+        اسم المنتج: ${sale.name}
+        الكود: ${sale.barcode}
+        سعر القطعة: ${sale.price}
+        الكمية المُباعة: ${sale.qty}
+        هل يوجد خصم؟ ${sale.discount}
+        تاريخ البيع: ${sale.date}
+
+        ------
+        `;
+    });
+
+    text += `---------------------------------`;
+    text += `\n\n إجمالي مبلغ المبيعات: $${salesInfo.totalMoney.toLocaleString()}`;
+    text += `\n هذا التقرير تم إصداره في ${new Date().toLocaleString()}`;
+    
+    return text;
+};
+export const createReportTextForDiscountedSales = (salesInfo) => {
+    const sales = salesInfo.sales;
+
+    let text = `**تقرير بعمليات البيع المُخفضة** \n`;
+    sales.map((sale) => {
+        text += `
+        اسم المنتج: ${sale.name}
+        الكود: ${sale.barcode}
+        سعر القطعة قبل الخصم: ${sale.priceBeforeDiscount}
+        سعر القطعة بعد الخصم: ${sale.price}
+        الكمية المُباعة: ${sale.qty}
+        تاريخ البيع: ${sale.date}
+        ------
+        `;
+    });
+
+    text += `---------------------------------`;
+    text += `\n\n إجمالي عدد عمليات الخصم: ${salesInfo.totalDiscountsSales}`;
+    text += `\n إجمالي مبلغ الخصم: $${salesInfo.totalDiscountsMoney.toLocaleString()}`;
+    text += `\n من أصل إجمالي مبلغ $${salesInfo.totalMoney.toLocaleString()}`;
+    text += `\n هذا التقرير تم إصداره في ${new Date().toLocaleString()}`;
+    
+    return text;
+};
+
+export const createSalesSummaryReport = (sales) => {
+    const salesSummary = getSalesSummary(sales);
+    const totalMoney = calculateTotalMoneyForSummary(salesSummary);
+    const totalSoldPieces = getTotalSoldPiecesForSummarySales(salesSummary); // Number Of All Sold Products
+    const totalSoldItems = salesSummary.length; // Number Of The Different Sold Items
+
+    const salesInfo = {
+        sales: salesSummary,
+        totalMoney: totalMoney,
+        totalSoldItems: totalSoldItems,
+        totalSoldPieces: totalSoldPieces,
+    };
+
+    const text = createReportTextForSalesSummary(salesInfo);
+    const name = "تقرير بملخص المبيعات";
+
+    return { text, name };
+};
+export const createSalesHistoryReport = (sales) => {
+    const totalMoney = calculateTotalMoneyForSalesHistory(sales);
+    const totalSoldPieces = getTotalSoldPiecesForSalesHistory(sales);
+
+    const salesInfo = {
+        sales: sales,
+        totalMoney: totalMoney,
+        totalSoldPieces: totalSoldPieces,
+    };
+
+    const text = createReportTextForSalesHistory(salesInfo);
+    const name = "تقرير بسجل عمليات البيع";
+
+    return { text, name };
+};
+export const createDiscountedSalesReport = (sales) => {
+        const DISCOUNT_PERCENTAGE = 0.1;
+
+        const discountedSales = getDiscountedSales(sales);
+        const totalMoney = calculateTotalMoneyForDiscountedSalesBeforeDiscount(discountedSales);
+        const totalDiscountedSales = discountedSales.length;
+
+        const salesInfo = {
+            sales: discountedSales,
+            totalMoney: totalMoney,
+            totalDiscountsMoney: totalMoney * DISCOUNT_PERCENTAGE,
+            totalDiscountsSales: totalDiscountedSales
+        }
+
+    const text = createReportTextForDiscountedSales(salesInfo);
+    const name = "تقرير بعمليات البيع المُخفضة";
+
+    return { text, name };
+};
+
+const encodeText = (text) => {
+    const encoder = new TextEncoder();
+    return encoder.encode(text);
+}
+export const exportReport = (reportText, reportName) => {
+    const blob = new Blob([encodeText(reportText)], { type: 'text/plain' });
+    // Create The Download Link And Download The File
+    const downloadLink = document.createElement("a");
+    downloadLink.href = URL.createObjectURL(blob);
+    downloadLink.download = `${reportName}.txt`;
+    downloadLink.click();
+    // Clean up the temporary URL after download (optional)
+    URL.revokeObjectURL(downloadLink.href);
+};

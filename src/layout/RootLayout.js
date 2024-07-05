@@ -12,12 +12,20 @@ const RootLayout = () => {
                             الشراء
                     </NavLink>
                 </div>
-                <div className="text-center rounded-md flex-1">
+                <div className="text-center rounded-md flex-1 ml-0.5">
                     <NavLink
                         to="sales"
                         className={`block p-3 rounded-md font-semibold hover:bg-main-color`}
                     >
                         المبيعات
+                    </NavLink>
+                </div>
+                <div className="text-center rounded-md flex-1">
+                    <NavLink
+                        to="sales-reports"
+                        className={`block p-3 rounded-md font-semibold hover:bg-main-color`}
+                    >
+                        التقارير
                     </NavLink>
                 </div>
             </nav>

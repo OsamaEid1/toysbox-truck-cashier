@@ -38,9 +38,9 @@ const Buy = () => {
                 const result = searchOnProductByName(allProducts, searchInputValue);
                 if (result && result.length) setTargetProducts(result);
                 else setError("المنتج غير موجود!");
-                // Set Products Locally For Faster  Searching In The Next Time
+                // Set Products Locally For Faster Searching In The Next Time
                 setInventoryProducts(allProducts);
-            } else alert("Can't Get All Products Now, Try Search Ny Barcode!")
+            } else alert("لا يمكن البحث بالإسم الآن يمكنك المحاولة بالبحث عن طريق الباركود!")
         }
     }
 
@@ -61,8 +61,8 @@ const Buy = () => {
             setProductToPay("");
             setIsBuyingFormVisible(false);
         }
-            setIsBuyingFormVisible(!isBuyingFormVisible);
-            setProductToPay(product);
+        setIsBuyingFormVisible(!isBuyingFormVisible);
+        setProductToPay(product);
         
     };
 

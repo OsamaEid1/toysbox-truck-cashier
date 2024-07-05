@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { addNewSell } from "../helpers";
 
 const BuyingProcess = ({ product }) => {
-    console.log("object", product);
     const [qtyWillBuy, setQtyWillBuy] = useState(1);
     const [isWithDiscount, setIsWithDiscount] = useState(false);
     const [totalPrice, setTotalPrice] = useState(0);
@@ -22,24 +21,17 @@ const BuyingProcess = ({ product }) => {
             const newSell = {
                 barcode: product.barcode,
                 name: product.name,
-                price: priceWillPay,
+                priceBeforeDiscount: Math.ceil(product.price),
+                price: Math.ceil(priceWillPay),
                 qty: qtyWillBuy,
-                discount: isWithDiscount ? "نعم" : "لا"
+                discount: isWithDiscount ? "نعم" : "لا",
+                date: new Date().toLocaleString()
             };
             if(await addNewSell(newSell)) {
                 // Notify user about successful sale
-                alert('Successful Sale!');
-            } else alert("Field Sale!");
-
-        //     // Update Product Stock
-        //     const newStock = product.stock - qtyWillBuy;
-        //     console.log(newStock);
-        //     if(await updateProductStockInDB(product.barcode, newStock)) {
-        //         // Notify user about successful sale
-        //         alert('Updated Stock Successfully!');
-        //     } else alert("Field To Update Stock!");
-
-        } else alert("enter valid quantity!")
+                alert('تم البيع بنجاح!');
+            } else alert("لم يتم البيع بنجاح!");
+        } else alert("ادخل الكمية الصحيحة")
     };
 
     const [isDiscountDisabled, setIsDiscountDisabled] = useState(true);
