@@ -9,6 +9,6 @@ I worked for ToysBox company for a while in a different field, and it had a truc
 - Provide reports for (summary, detailed, discounted) sales records with statistics for each one.
 
 ### Tests:
-Barcodes => (0505, 0210018033, 6223007322539, 6225000441873, 0180058777)
-Full Name => (سكرو شو بوكس, ولاعة, Elastic Shoot Gun - HY6007)
-Part Of Name => (Gun, Game, girl, toy)
+- Barcodes => (0505, 0210018033, 6223007322539, 6225000441873, 0180058777)
+- Full Name => (سكرو شو بوكس, ولاعة, Elastic Shoot Gun - HY6007)
+- Part Of Name => (Gun, Game, girl, toy)
